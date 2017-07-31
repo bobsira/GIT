@@ -8,4 +8,17 @@ color.branch=auto
 color.interactive=auto
 color.diff=auto
 ...
-New contents
+Cloning an Existing Repository
+If you want to get a copy of an existing Git Repository -for example, a project 
+you'd like to contribute to - the command you need is git clone.
+
+You clone a repository with git clone [url] . For example, if you want to
+clone the Git linkable library called libgit2, you can do so like this:
+
+$ git clone https://github.com/libgit2/libgit2
+
+
+
+$ git clone https://github.com/libgit2/libgit2 mylibgit
+That command does the same thing as the previous one, but the target di-
+rectory is called mylibgit .
