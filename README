@@ -4,3 +4,7 @@ My Project
 Tracking New Files
 In order to begin tracking a new file, you use the command git add . To begin
 tracking the README file, you can run this: $git add README
+
+
+Let’s say you edit and stage the README file again and then edit the CONTRI-
+BUTING.md file without staging it.
