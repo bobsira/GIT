@@ -31,3 +31,12 @@ repository in reverse chronological order – that is, the most recent commits
 show up first. As you can see, this command lists each commit with its SHA-1
 checksum, the author’s name and email, the date written, and the commit mes-
 sage.
+
+
+A huge number and variety of options to the git log command are avail-
+able to show you exactly what you’re looking for. Here, we’ll show you some of
+the most popular
+
+One of the more helpful options is -p , which shows the difference intro-
+duced in each commit. You can also use -2 , which limits the output to only the
+last two entries:
