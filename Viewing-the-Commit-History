@@ -150,3 +150,15 @@ $ git log --pretty=format:"%h %s" --graph
 
 This type of output will become more interesting as we go through branch-
 ing and merging in the next chapter.
+
+Common options to git log
+Option 				Description
+-p				Show the patch introduced with each commit
+--stat				Show statstics for files modified in each commit.
+--shortstat			Display only the changed/insertions/deletions line from the --stat command
+--name-only			Show the list of files modified after the commit information
+--name-status			Show the list of files affected with added/modified/deleted information as well
+--abbrev-commit 		Show only the first few characters of the SHA-1 checksum instead of all 40
+--relative-date			Display the date in a relative format(for example, "2 weeks ago') instead of using the full date format
+--graph				Display an ASCII graph of the branch and merge history beside the log output
+--pretty			Show commits in an alternate format.Options include one-line,short,full,fuller,and format (where you specify your own format).
