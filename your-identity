@@ -11,3 +11,13 @@ tem. If you want to override this with a different name or email address for spe
 cific projects, you can run the command without the --global option when
 you’re in that project.
 Many of the GUI tools will help you do this when you first run them.
+
+
+Your Editor
+Now that your identity is set up, you can configure the default text editor that
+will be used when Git needs you to type in a message. If not configured, Git uses
+your system’s default editor.
+If you want to use a different text editor, such as Emacs, you can do the fol-
+lowing:
+$ git config --global core.editor emacs
+
