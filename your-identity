@@ -21,3 +21,15 @@ If you want to use a different text editor, such as Emacs, you can do the fol-
 lowing:
 $ git config --global core.editor emacs
 
+Checking Your Settings
+If you want to check your settings, you can use the git config --list com-
+mand to list all the settings Git can find at that point:
+
+$ git config --list
+user.name=John Doe
+user.email=johndoe@example.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...
