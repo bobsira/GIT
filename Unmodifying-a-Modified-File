@@ -1,0 +1,32 @@
+Unmodifying a Modified File
+
+What if you realize that you don’t want to keep your changes to the CONTRIBU-
+TING.md file? How can you easily unmodify it – revert it back to what it looked
+like when you last committed (or initially cloned, or however you got it into
+your working directory)? Luckily, git status tells you how to do that, too. In
+the last example output, the unstaged area looks like this:
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git checkout -- <file>..." to discard changes in working directory)
+modified:
+CONTRIBUTING.md
+
+
+It tells you pretty explicitly how to discard the changes you’ve made. Let’s do
+what it says:
+
+$ git checkout -- CONTRIBUTING.md
+$ git status
+On branch master
+Changes to be committed:
+(use "git reset HEAD <file>..." to unstage)
+renamed:
+README.md -> README
+
+You can see that the changes have been reverted.
+
+It’s important to understand that git checkout -- <file> is a dangerous
+command. Any changes you made to that file are gone – Git just copied
+another file over it. Don’t ever use this command unless you absolutely
+know that you don’t want the file.
