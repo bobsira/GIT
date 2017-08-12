@@ -1,0 +1,47 @@
+Unstaging a Staged File
+The next two sections demonstrate how to wrangle your staging area and work-
+ing directory changes. The nice part is that the command you use to determine
+the state of those two areas also reminds you how to undo changes to them.
+For example, let’s say you’ve changed two files and want to commit them as
+two separate changes, but you accidentally type git add * and stage them
+both. How can you unstage one of the two? The git status command re-
+minds you:
+
+$ git add *
+$ git status
+On branch master
+Changes to be committed:
+(use "git reset HEAD <file>..." to unstage)
+renamed:
+modified:
+README.md -> README
+CONTRIBUTING.md
+
+Right below the “Changes to be committed” text, it says use git reset
+HEAD <file>... to unstage. So, let’s use that advice to unstage the CONTRI-
+BUTING.md file:
+
+$ git reset HEAD CONTRIBUTING.md
+Unstaged changes after reset:
+M
+CONTRIBUTING.md
+$ git status
+On branch master
+Changes to be committed:
+(use "git reset HEAD <file>..." to unstage)
+renamed:
+README.md -> README
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git checkout -- <file>..." to discard changes in working directory)
+modified:
+CONTRIBUTING.md
+
+The command is a bit strange, but it works. The CONTRIBUTING.md file is
+modified but once again unstaged.
+
+
+While git reset can be a dangerous command if you call it with --hard , in
+this instance the file in your working directory is not touched. Calling git
+reset without an option is not dangerous - it only touches your staging
+area.
