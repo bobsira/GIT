@@ -1,0 +1,4 @@
+Tagging
+Like most VCSs, Git has the ability to tag specific points in history as being im-
+portant. Typically people use this functionality to mark release points (v1.0, and
+so on).
