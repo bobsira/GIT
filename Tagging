@@ -88,3 +88,11 @@ commit ca82a6dff817ec66f44342007202690a93763949
 Author: Scott Chacon <schacon@gee-mail.com>
 Date:   Mon Mar 17 21:52:11 2008 -0700
      changed the version number
+
+Tagging Later
+You can also tag commits after you’ve moved past them. 
+
+To tag that commit, you spec-
+ify the commit checksum (or part of it) at the end of the command:
+
+$ git tag -a v1.2 9fceb02
