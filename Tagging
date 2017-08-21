@@ -67,3 +67,24 @@ changed the version number
 
 That shows the tagger information, the date the commit was tagged, and the
 annotation message before showing the commit information.
+
+Lightweight Tags
+Another way to tag commits is with a lightweight tag. This is basically the com-
+mit checksum stored in a file – no other information is kept. To create a light-
+weight tag, don’t supply the -a , -s , or -m option:
+
+$ git tag v1.4-lw
+$ git tag
+v0.1
+v1.3
+v1.4
+v1.4-lw
+v1.5
+
+This time, if you run git show on the tag, you don’t see the extra tag infor-
+mation. The command just shows the commit:
+$ git show v1.4-lw
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon <schacon@gee-mail.com>
+Date:   Mon Mar 17 21:52:11 2008 -0700
+     changed the version number
