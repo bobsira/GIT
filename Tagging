@@ -2,3 +2,26 @@ Tagging
 Like most VCSs, Git has the ability to tag specific points in history as being im-
 portant. Typically people use this functionality to mark release points (v1.0, and
 so on).
+
+Listing Your Tags
+Listing the available tags in Git is straightforward. Just type git tag :
+$ git tag
+v0.1
+v1.3
+
+This command lists the tags in alphabetical order; the order in which they
+appear has no real importance.
+You can also search for tags with a particular pattern. The Git source repo,
+for instance, contains more than 500 tags. If you’re only interested in looking at
+the 1.8.5 series, you can run this:
+$ git tag -l "v1.8.5*"
+v1.8.5
+v1.8.5-rc0
+v1.8.5-rc1
+v1.8.5-rc2
+v1.8.5-rc3
+v1.8.5.1
+v1.8.5.2
+v1.8.5.3
+v1.8.5.4
+v1.8.5.5
