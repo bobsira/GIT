@@ -38,3 +38,7 @@ Your Git repository now contains five objects: one blob for the contents of
 each of your three files, one tree that lists the contents of the directory and
 specifies which file names are stored as which blobs, and one commit with the
 pointer to that root tree and all the commit metadata.
+
+If you make some changes and commit again, the next commit stores a
+pointer to the commit that came immediately before it.
+
